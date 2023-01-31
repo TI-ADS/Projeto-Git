@@ -8,7 +8,6 @@
     min-height: 100vh;
     grid-template-areas: "cabeca cabeca cabeca"
                         "meio meio meio"
-                        "rodape rodape rodape"
                         "fim fim fim";
 }
 .cabeca{
@@ -23,6 +22,11 @@
     margin-left: 10%;
     margin-right: 10%;
     font-family: 'Rubik', sans-serif;
+}
+.fim{
+    grid-area: fim;
+    background-color: #993399;
+    height: 200px;
 }
 
 
@@ -84,7 +88,7 @@ ul li a{
 
 /*Edição do meio*/
 
-.sec1, .sec2{
+.sec1, .sec2, .sec3{
     margin-top: 50px;
 }
 .meio p{
@@ -93,7 +97,7 @@ ul li a{
     font-size: 18px;
     text-align: justify;
 }
-.sec1 p span, .sec2 p span{
+.sec1 p span, .sec2 p span, .sec3 p span{
     color: #993399;
     text-shadow: 0px 1px 10px #993399;
 }
@@ -104,7 +108,7 @@ ul li a{
     margin-left: 10%;
 }
 
-.meio .sec2 h2 span{
+.meio h2 span{
     color: #993399;
 }
 
@@ -135,6 +139,61 @@ ul li a{
 }
 .divImg small{
     margin-left: 40px;
+}
+
+.meio .sec3{
+    display: grid;
+    grid-template-areas: "divH2 divH2"
+                         "secImg secP"
+                         "secImg secP";
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.secP{
+    grid-area: secP;
+    margin-left: 20px;
+}
+.secP ol{
+    margin-left: 30px;
+}
+.secImg{
+    grid-area: secImg;
+}
+.secImg img{
+    width: 500px;
+    margin-right: 20px;
+    display: flex;
+}
+
+/*Editando o rodapé*/
+.rodape{
+    width: 80%;
+    margin-left: 10%;
+    grid-template-areas: "header header"
+                         "article article";
+}
+.rodape header{
+    grid-area: header;
+    display: flex;
+}
+.rodape article{
+    grid-area: article;
+}
+.rodape header .img{
+    height: 60px;
+    padding: 28px;
+    background-color: #000;
+    margin-left: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.rodape header .imag{
+    width: 200px;
+    padding: 3px;
+    background-color: #000;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 @media (min-width: 300px) and (max-width:880px){
@@ -202,6 +261,7 @@ ul li a{
         margin-left: 10%;
     }
 
+    /*Meio responsivo*/
     .meio{
         width: 90%;
         margin-left: 5%;
@@ -215,17 +275,40 @@ ul li a{
                          "divP divP"
                          "divImg divImg";
     }
-    .sec2 h2{
+    .meio .sec3{
+        grid-template-areas: "divH2 divH2"
+                            "secP secP"
+                            "secImg secImg";
+    }
+    .sec2 h2, .sec3 h2{
         width: 90%;
         margin-left: 5%;
     }
     .divP p{
         margin-left: 5%;
     }
-    .divImg img{
+    .secImg{
+        margin-left: 5%;
+    }
+    .secP{
+        margin-right: 5%;
+        margin-bottom: 30px;
+    }
+    .divImg img, .secImg img{
         width: 90%;
     }
-    .divImg small{
+    .divImg small, .secImg small{
         margin-left: 90px;
+    }
+
+    /*Rodape responsivo*/
+    .fim{
+        background-color: #000;
+    }
+    .imag{
+        width: 100px;
+    }
+    .img{
+        height:50px ;
     }
 }
