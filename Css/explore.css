@@ -1,20 +1,28 @@
 *{
     margin: 0%;
     padding: 0%;
-    font-family: 'Roboto', sans-serif;
 }
 #container{
     display: grid;
     min-width: 100%;
     min-height: 100vh;
     grid-template-areas: "cabeca cabeca cabeca"
-                         "meio meio meio"
-                         "rodape rodape rodape"
-                         "fim fim fim";
+                        "meio meio meio"
+                        "rodape rodape rodape"
+                        "fim fim fim";
 }
 .cabeca{
     grid-area: cabeca;
     height: 90px;
+    font-family: 'Roboto', sans-serif;
+}
+.meio{
+    grid-area: meio;
+    min-height: 70vh;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Rubik', sans-serif;
 }
 
 
@@ -74,6 +82,60 @@ ul li a{
     width: 100%;
 }
 
+/*Edição do meio*/
+
+.sec1, .sec2{
+    margin-top: 50px;
+}
+.meio p{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: justify;
+}
+.sec1 p span, .sec2 p span{
+    color: #993399;
+    text-shadow: 0px 1px 10px #993399;
+}
+
+.meio .imagem img{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 10%;
+}
+
+.meio .sec2 h2 span{
+    color: #993399;
+}
+
+.meio .sec2{
+    display: grid;
+    grid-template-areas: "divH2 divH2"
+                         "divP divImg"
+                         "divP divImg";
+    align-items: center;
+}
+
+.meio h2{
+    grid-area: divH2;
+    font-size: 30px;
+}
+.divP{
+    grid-area: divP;
+    margin-right: 20px;
+}
+.divImg{
+    grid-area: divImg;
+}
+.divImg img{
+    width: 500px;
+    margin-left: 20px;
+    display: flex;
+    /* margin-top: 50px; */
+}
+.divImg small{
+    margin-left: 40px;
+}
 
 @media (min-width: 300px) and (max-width:880px){
     #logo{
@@ -138,5 +200,32 @@ ul li a{
     #menu ul .explore:hover:after{
         width: 80%;
         margin-left: 10%;
+    }
+
+    .meio{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .meio .imagem img{
+        width: 100%;
+        margin-left: 0;
+    }
+    .meio .sec2{
+        grid-template-areas: "divH2 divH2"
+                         "divP divP"
+                         "divImg divImg";
+    }
+    .sec2 h2{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .divP p{
+        margin-left: 5%;
+    }
+    .divImg img{
+        width: 90%;
+    }
+    .divImg small{
+        margin-left: 90px;
     }
 }
