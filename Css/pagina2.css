@@ -1,7 +1,6 @@
 *{
     margin: 0%;
     padding: 0%;
-    font-family: 'Roboto', sans-serif;
 }
 #container{
     display: grid;
@@ -9,12 +8,26 @@
     min-height: 100vh;
     grid-template-areas: "cabeca cabeca cabeca"
                          "meio meio meio"
-                         "rodape rodape rodape"
-                         "fim fim fim";
+                         "fim fim fim"
+                         "rodape rodape rodape";
 }
 .cabeca{
     grid-area: cabeca;
     height: 90px;
+    font-family: 'Roboto', sans-serif;
+}
+.meio{
+    grid-area: meio;
+    font-family: 'Rubik', sans-serif;
+}
+.fim{
+    grid-area: fim;
+    font-family: 'Rubik', sans-serif;
+    background-color: #020530;
+}
+.rodape{
+    grid-area: rodape;
+    font-family: 'Rubik', sans-serif;
 }
 
 
@@ -74,6 +87,209 @@ ul li a{
     width: 100%;
 }
 
+/*Editando o meio*/
+
+.meio .inicio{
+    margin-top: 50px;
+    margin-bottom: 90px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.meio .inicio h2{
+    font-size: 35px;
+    margin-bottom: 40px;
+    border-bottom: 3px solid #993399;
+}
+
+.meio h2 span{
+    color: #993399;
+}
+
+.meio .inicio .img img{
+    margin-left: 5%;
+    width: 700px;
+}
+
+.meio .inicio .img{
+    margin-bottom: 50px;
+}
+
+.meio .inicio small{
+    margin-left: 20px;
+}
+
+.meio p{
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.meio p span{
+    color: #993399;
+    text-shadow: 0px 1px 10px #993399;
+}
+
+.meio p a{
+    text-decoration: none;
+    text-shadow: 0px 1px 10px #993399;
+}
+
+.meio .contatos{
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 90px;
+}
+
+.contatos h2{
+    font-size: 35px;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #993399;
+}
+
+.contatos .interior{
+    width: 80%;
+    margin-left: 10%;
+    display: grid;
+    grid-template-areas: "texto img"
+                          "texto img";
+}
+
+.interior .nome{
+    grid-area: texto;
+}
+
+.nome h3{
+    margin-bottom: 20px;
+    margin-top: 35px;
+}
+
+.interior .imagem{
+    grid-area: img;
+}
+
+.imagem img{
+    width: 500px;
+}
+
+/*Editando o fim*/
+.fim{
+    width: 100%;
+}
+.fim .intro {
+    width: 80%;
+    margin-left: 10%;
+    display: grid;
+    grid-template-areas: "imagem form"
+                         "imagem form";
+    align-items: center;
+    padding: 20px;
+}
+.mapa{
+    grid-area: imagem;
+}
+.forms{
+    grid-area: form;
+}
+.mapa img{
+    width: 500px;
+}
+.forms input{
+    display: block;
+    width: 400px;
+    padding: 10px;
+    border: 2px solid #993399;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 80px;
+    outline: none;
+}
+
+.forms #text{
+    height: 80px;
+}
+
+.forms h3{
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+.forms button{
+    padding: 10px;
+    width: 100px;
+    border-radius: 50px;
+    border: transparent;
+    margin-left: 40%;
+    margin-bottom: 20px;
+    background-color: #25d1fe;
+    color: #020530;
+    transition: all 0.3s;
+}
+
+.forms button:hover{
+    background-color: #fff;
+    border: 2px solid #25d1fe;
+    box-shadow: 2px 2px 8px #25d1fe;
+    color: #25d1fe;
+}
+.forms small{
+    margin-top: 25px;
+    margin-left: 30%;
+    color: #fff;
+}
+
+/*Editando rodape*/
+
+.rodape{
+    width: 100%;
+    background-color: #410d41;
+    color: #fff;
+    padding: 20px;
+}
+
+.textRodape{
+    width: 80%;
+    margin-left: 10%;
+    display: grid;
+    grid-template-areas: "logo ul h3"
+                          "logo ul h3";
+    justify-content: space-around;
+}
+
+.logoRodape{
+    grid-area: logo;
+}
+.ul{
+    grid-area: ul;
+}
+.h3{
+    grid-area: h3;
+}
+
+.logoRodape img{
+    height: 70px;
+    margin-bottom: 30px;
+}
+
+.rodape .ul p{
+    margin-bottom: 5px;
+}
+
+.rodape .ul a{
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.rodape .ul a:hover{
+    color: #a5ddeb;
+    text-shadow: 1px 1px 4px #fff;
+}
+
+#fim{
+    text-align: center;
+    margin-top: 20px;
+}
 
 @media (min-width: 300px) and (max-width:880px){
     #logo{
@@ -138,5 +354,85 @@ ul li a{
     #menu ul .explore:hover:after{
         width: 80%;
         margin-left: 10%;
+    }
+
+    /*Editando o meio*/
+    .meio .inicio .img img, .meio .contatos .imagem img{
+        margin-left: 5%;
+        width: 320px;
+    }
+
+    .meio .inicio, .meio .contatos{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .imagem img{
+        width: 250px;
+    }
+
+    .contatos .interior{
+        width: 100%;
+        margin-left: 0;
+        display: grid;
+        grid-template-areas: "img img"
+                              "texto texto";
+    }
+
+    /*Editando o fim*/
+    .forms input{
+        display: block;
+        visibility: visible;
+        width: 325px;
+        margin-left: 5%;
+    }
+
+    .forms button{
+        margin-left: 35%;
+    }
+
+    .forms small{
+        margin-left: 25%;
+        margin-bottom: 20px;
+    }
+
+    .mapa img{
+        width: 345px;
+        margin-left: 5%;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .fim .intro {
+        width: 100%;
+        margin-left: 0%;
+        padding: 0%;
+        display: grid;
+        grid-template-areas: "form form"
+                             "imagem imagem";
+    }
+
+    /*Editando o rodape*/
+    .rodape{
+        padding: 0;
+    }
+    .textRodape{
+        width: 100%;
+        margin-left: 0;
+        display: grid;
+        grid-template-areas: "logo logo logo"
+                              "h3 h3 h3"  
+                              "ul ul ul";
+        justify-content: space-around;
+    }
+
+    .logoRodape img{
+        margin-top: 20px;
+    }
+    .h3{
+        margin-bottom: 30px;
+    }
+    #fim{
+        margin-bottom: 20px;
     }
 }

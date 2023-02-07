@@ -8,7 +8,6 @@
     min-height: 100vh;
     grid-template-areas: "cabeca cabeca cabeca"
                         "meio meio meio"
-                        "rodape rodape rodape"
                         "fim fim fim";
 }
 .cabeca{
@@ -22,6 +21,10 @@
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
+    font-family: 'Rubik', sans-serif;
+}
+.rodape{
+    grid-area: fim;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -84,7 +87,7 @@ ul li a{
 
 /*Edição do meio*/
 
-.sec1, .sec2{
+.sec1, .sec2, .sec3{
     margin-top: 50px;
 }
 .meio p{
@@ -93,7 +96,7 @@ ul li a{
     font-size: 18px;
     text-align: justify;
 }
-.sec1 p span, .sec2 p span{
+.sec1 p span, .sec2 p span, .sec3 p span{
     color: #993399;
     text-shadow: 0px 1px 10px #993399;
 }
@@ -104,7 +107,7 @@ ul li a{
     margin-left: 10%;
 }
 
-.meio .sec2 h2 span{
+.meio h2 span{
     color: #993399;
 }
 
@@ -135,6 +138,84 @@ ul li a{
 }
 .divImg small{
     margin-left: 40px;
+}
+
+.meio .sec3{
+    display: grid;
+    grid-template-areas: "divH2 divH2"
+                         "secImg secP"
+                         "secImg secP";
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.secP{
+    grid-area: secP;
+    margin-left: 20px;
+}
+.secP ol{
+    margin-left: 30px;
+}
+.secImg{
+    grid-area: secImg;
+}
+.secImg img{
+    width: 500px;
+    margin-right: 20px;
+    display: flex;
+}
+
+/*Editando rodape*/
+
+.rodape{
+    width: 100%;
+    background-color: #410d41;
+    color: #fff;
+    padding: 20px;
+}
+
+.textRodape{
+    width: 80%;
+    margin-left: 10%;
+    display: grid;
+    grid-template-areas: "logo ul h3"
+                          "logo ul h3";
+    justify-content: space-around;
+}
+
+.logoRodape{
+    grid-area: logo;
+}
+.ul{
+    grid-area: ul;
+}
+.h3{
+    grid-area: h3;
+}
+
+.logoRodape img{
+    height: 70px;
+    margin-bottom: 30px;
+}
+
+.rodape .ul p{
+    margin-bottom: 5px;
+}
+
+.rodape .ul a{
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.rodape .ul a:hover{
+    color: #a5ddeb;
+    text-shadow: 1px 1px 4px #fff;
+}
+
+#fim{
+    text-align: center;
+    margin-top: 20px;
 }
 
 @media (min-width: 300px) and (max-width:880px){
@@ -202,6 +283,7 @@ ul li a{
         margin-left: 10%;
     }
 
+    /*Meio responsivo*/
     .meio{
         width: 90%;
         margin-left: 5%;
@@ -215,17 +297,53 @@ ul li a{
                          "divP divP"
                          "divImg divImg";
     }
-    .sec2 h2{
+    .meio .sec3{
+        grid-template-areas: "divH2 divH2"
+                            "secP secP"
+                            "secImg secImg";
+    }
+    .sec2 h2, .sec3 h2{
         width: 90%;
         margin-left: 5%;
     }
     .divP p{
         margin-left: 5%;
     }
-    .divImg img{
+    .secImg{
+        margin-left: 5%;
+    }
+    .secP{
+        margin-right: 5%;
+        margin-bottom: 30px;
+    }
+    .divImg img, .secImg img{
         width: 90%;
     }
-    .divImg small{
+    .divImg small, .secImg small{
         margin-left: 90px;
+    }
+
+    /*Editando o rodape*/
+    .rodape{
+        padding: 0;
+    }
+    .textRodape{
+        width: 100%;
+        margin-left: 0;
+        display: grid;
+        grid-template-areas: "logo logo logo"
+                              "h3 h3 h3"  
+                              "ul ul ul";
+        justify-content: space-around;
+    }
+
+    .logoRodape img{
+        margin-top: 20px;
+    }
+    .h3{
+        margin-bottom: 30px;
+    }
+    #fim{
+        margin-bottom: 20px;
     }
 }
