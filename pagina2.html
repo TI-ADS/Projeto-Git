@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="./Css/pagina2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <title>Pagina 2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <title>Campus</title>
 </head>
 <body>
     <div id="container">
@@ -22,12 +22,98 @@
                         <li><a class="li" href="index.html">HOME</a></li>
                         <li><a class="li" href="pagina1.html">LINGUAGENS</a></li>
                         <li><a class="active" href="pagina2.html">INSTITUIÇÃO</a></li>
-                        <li><a class="explore" href="explore.html">EXPLORE</a></li>
+                        <li><a class="explore li" href="explore.html">EXPLORE</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
+        <article class="meio">
+            <div class="inicio">
+                <h2>Sobre o <span>Campus Cajazeiras</span>:</h2>
+                <div class="img">
+                    <img src="./Imagens/campus.jpeg" alt="">
+                    <small>Instituto Federal da Paraíba Campus Cajazeiras</small>
+                </div>
+                <p>
+                    O Campus Cajazeiras foi inaugurado em <span>4 de dezembro de 1994</span>, 
+                    quando o Instituto ainda era denominado <span>Escola Técnica Federal da Paraíba</span>. 
+                    A Unidade de Ensino Descentralizada, como era inicialmente chamada, foi 
+                    criada para atender as necessidades da região, dentro da perspectiva de 
+                    interiorização da educação profissional. Cajazeiras foi a segunda cidade 
+                    paraibana a receber um campus do IFPB.
+                </p>
+                <p>
+                    O Campus do IFPB em Cajazeiras <span> tem contribuído para a transformação da 
+                    realidade social, não só da cidade em que está instalado, mas de toda a 
+                    região</span>. Em pouco mais de duas décadas de existência, centenas de profissionais 
+                    foram capacitados pelos cursos técnicos, desde o primeiro de Agrimensura até os 
+                    atuais de Informática (Integrado ao ensino médio), Eletromecânica e Edificações 
+                    (Integrados e Subsequentes ao ensino médio), além do  Técnico em Meio Ambiente (Proeja).
+                </p>
+                <p>
+                    Nos últimos anos, através dos cursos superiores de Tecnologia em <a href="https://estudante.ifpb.edu.br/cursos/14/" target="_blank"> Automação Industrial</a> 
+                    e <a href="https://estudante.ifpb.edu.br/cursos/12/" target="_blank">Análise e Desenvolvimento de Sistemas</a>, <a href="https://estudante.ifpb.edu.br/cursos/8/" target="_blank">Licenciatura em Matemática</a>
+                    e os <a href="https://estudante.ifpb.edu.br/cursos/25/" target="_blank">Bacharelados em Engenharia Civil</a> e <a href="https://estudante.ifpb.edu.br/cursos/208/" target="_blank">Engenharia de Controle e Automação</a>, a mão de obra qualificada 
+                    formada pelo IFPB, no coração do sertão, tem garantido seu espaço em todo o Brasil 
+                    e até fora dele.
+                </p>
+            </div>
+            <div class="contatos">
+                <h2>Endereço:</h2>
+                <div class="interior">
+                    <div class="nome">
+                        <h3>IFPB Campus Cajazeiras</h3>
+                        <p>Rua José Antônio da Silva, 300</p>
+                        <p>Bairro Jardim Oásis</p>
+                        <p>Cajazeiras - PB</p>
+                        <p>CEP: 58.900-000 </p>
+                        <h3>Horário de Funcionamento</h3>
+                        <p>Segunda a Sexta-Feira, das 07h às 22h35.</p>
+                    </div>
+                    <div class="imagem">
+                        <img src="./Imagens/campus.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <aside class="fim">
+            <div class="intro">
+                <div class="mapa">
+                    <img src="./Imagens/mapaIFPB.png" alt="">
+                </div>
+                <div class="forms">
+                    <form action="" method="post" id="form">
+                        <h3>Alguma duvida?</h3>
+                        <input id="emaill" type="email" placeholder="Informe o seu e-mail." data-rule="requerid">
+                        <input id="text" type="text" placeholder="Digite sua duvida, logo entraremos em contato.">
+                        <button  id="button">Enviar</button><br>
+                        <small>Para mais informações <a href="https://www.ifpb.edu.br/cajazeiras" target="_blank">clique aqui</a></small>
+                    </form>
+                </div>
+            </div>
+        </aside>
+        <footer class="rodape">
+            <div class="textRodape">
+                <div class="logoRodape">
+                    <img src="./Imagens/logoIF.png" alt="">
+                </div>
+                <div class="ul">
+                    <a href="index.html"><p>Home</p></a>
+                    <a href="explore.html"><p>Explore</p></a>
+                    <a href="pagina1.html"><p>Curso</p></a>
+                    <a href="pagina2.html"><p>Campus</p></a>
+                </div>
+                <div class="h3">
+                    <h3>IFPB Campus Cajazeiras</h3>
+                        <p>Rua José Antônio da Silva, 300</p>
+                        <p>Bairro Jardim Oásis</p>
+                        <p>Cajazeiras - PB</p>
+                        <p>CEP: 58.900-000 </p>
+                </div>
+            </div>
+            <p id="fim">2023 ©ADS/IFPB. Política de Privacidade.</p>
+        </footer>
     </div>
-    
+    <script src="./JavaScript/cafeina.js"></script>
 </body>
 </html>
