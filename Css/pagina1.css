@@ -167,9 +167,63 @@ main .main__img{
     text-decoration: none;
     text-shadow: 0px 1px 10px #993399;
 }
+.tabeça-main{
+    margin-top: 50vh;
+}
+.tabela{
+    display: flex;
+}
+th{
+    color: #993399;
+}
 
-
-
+h1{
+    color: #993399;
+ 
+    margin-top: 80px;
+    }
+    a{
+        text-decoration: none;
+    }
+    table, th, td {
+    border: 0px solid black;
+    }
+    
+    table {
+    border-collapse: collapse;
+    margin: auto;
+    }
+    
+    th, td{
+    padding: 10px;
+    text-align: center;
+    width: 120px;
+    }
+    
+    th{
+    font-weight: bold;
+    }
+    
+    
+    tr:nth-child(even) {
+    background-color: #e5d4e9;
+    }
+    
+    tr:hover:nth-child(1n + 2) {
+    background-color: #b3c6c7;
+    color: #fff;
+    }
+    
+    button{
+        padding: 10px 20px;
+        font-size: 11px;
+        background-color: #7d0c8b;
+        border: none;
+        outline: none;
+        border-radius: 1px;
+        cursor: pointer;
+        color: rgb(252, 252, 252);
+    }
 
 /*Editando rodape*/
 
