@@ -1,7 +1,6 @@
 *{
     margin: 0%;
     padding: 0%;
-    font-family: 'Roboto', sans-serif;
 }
 #container{
     display: grid;
@@ -9,16 +8,31 @@
     min-height: 100vh;
     grid-template-areas: "cabeca cabeca cabeca"
                          "meio meio meio"
-                         "rodape rodape rodape"
-                         "fim fim fim";
+                         "fim fim fim"
+                         "rodape rodape rodape";
 }
 .cabeca{
     grid-area: cabeca;
     height: 90px;
+    font-family: 'Roboto', sans-serif;
+}
+.meio{
+    grid-area: meio;
+    font-family: 'Rubik', sans-serif;
+}
+.fim{
+    grid-area: fim;
+    font-family: 'Rubik', sans-serif;
+    background-color: #020530;
+}
+.rodape{
+    grid-area: rodape;
+    font-family: 'Rubik', sans-serif;
 }
 
 
 /* Edição da Cabeca*/
+
 .titulo{
     display: flex;
     align-items: center;
@@ -75,70 +89,139 @@ ul li a{
 }
 
 
-@media (min-width: 300px) and (max-width:880px){
-    #logo{
-        height: 140px;
-        margin-left: 0;
-    }
-    input{
-        visibility: hidden;
-     }
-     #menu_op{
-         display: block;
-     }
-     label{
-         display: block;
-         margin-left: 40px;
-     }
-     label img{
-         padding-left: 20px;
-         width: 40px;
-     }
-     nav{
-         background-color: rgba(0,0,0,0.9);
-         width: 80%;
-         height: 220px;
-         border-radius: 10px;
-     }
-     #menu_op:checked ~ #menu{
-         margin-right: 0;
-         transition: all 0.5s;
-     }
-     #menu{
-         top: 85px;
-         position: absolute;
-         z-index: 99;
-         right: 0;
-         margin-right: -120%;
-         box-shadow: 0px 5px 3px #1c1c11;
-     }
-     #menu ul li{
-         display: flex;
-         flex-direction: column;
-         margin-top: 20px;
-         height: 30px;
-         text-align: center;
-     }
-     .explore{
-        display: block;
-    }
-     #menu ul .explore::after{
-        content: '';
-        height: 50px;
-        width: 0;
-        background: #993399;
-        opacity: 0.4;
-        border-radius: 20px;
-        position: absolute;
-        left: 0;
-        bottom: -5px;
-        z-index: -111;
-        transition: all .5s;
-    }
-    #menu ul .explore:hover:after{
-        width: 80%;
-        margin-left: 10%;
-    }
 
-    
+
+ /*Edição meio*/
+
+.meio{
+    display: flex;
 }
+
+.wrapper{
+    margin: 0;
+    padding: 4%;
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6px;
+}
+.meio .inicio h2{
+    font-size: 35px;
+    margin-bottom: 40px;
+    border-bottom: 3px solid #993399;
+}
+h2{
+    font-size: 35px;
+    margin-bottom: 40px;
+    border-bottom: 3px solid #993399;
+}
+.meio h2 span{
+    color: #993399;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main__text {
+    width: 50%;
+}
+.main__text h1{
+    font-size: 4em;
+}
+
+.main__text .main__text-main{
+    display: flex;
+    margin-top: 80px;
+}
+main .main__img{
+    width: 600px;
+}
+
+.meio .inicio{
+    margin-top: 50px;
+    margin-bottom: 90px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.meio .inicio h2{
+    font-size: 35px;
+    margin-bottom: 40px;
+    border-bottom: 3px solid #993399;
+}
+
+.meio h2 span{
+    color: #993399;
+}
+
+.meio p span{
+    color: #993399;
+    text-shadow: 0px 1px 10px #993399;
+}
+
+.meio p a{
+    text-decoration: none;
+    text-shadow: 0px 1px 10px #993399;
+}
+
+
+
+
+/*Editando rodape*/
+
+.rodape{
+    width: 100%;
+    background-color: #410d41;
+    color: #fff;
+    padding: 20px;
+}
+
+.textRodape{
+    width: 80%;
+    margin-left: 10%;
+    display: grid;
+    grid-template-areas: "logo ul h3"
+                          "logo ul h3";
+    justify-content: space-around;
+}
+
+.logoRodape{
+    grid-area: logo;
+}
+.ul{
+    grid-area: ul;
+}
+.h3{
+    grid-area: h3;
+}
+
+.logoRodape img{
+    height: 70px;
+    margin-bottom: 30px;
+}
+
+.rodape .ul p{
+    margin-bottom: 5px;
+}
+
+.rodape .ul a{
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.rodape .ul a:hover{
+    color: #a5ddeb;
+    text-shadow: 1px 1px 4px #fff;
+}
+
+#fim{
+    text-align: center;
+    margin-top: 20px;
+}
+
+        
