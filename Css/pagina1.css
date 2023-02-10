@@ -167,12 +167,12 @@ main .main__img{
     text-decoration: none;
     text-shadow: 0px 1px 10px #993399;
 }
-.tabeça-main{
-    margin-top: 50vh;
-}
+
 .tabela{
     display: flex;
+    margin-bottom: 80px;
 }
+
 th{
     color: #993399;
 }
