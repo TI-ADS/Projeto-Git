@@ -37,7 +37,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: black;
+    background-color: #020530;
     margin-top: 0;
     width: 100%;
     height: 80px;
@@ -45,12 +45,11 @@
     box-shadow: 0px 5px 10px #1c1c1c;
 }
 #logo{
-    height: 180px;
+    height: 50px;
     margin-top: 10px;
     cursor: pointer;
     margin-left: 30px;
     opacity: 0.9;
-    border-radius: 20px;
 }
 input, #menu_op{
     display: none ;
@@ -113,6 +112,9 @@ ul li a{
     margin-bottom: 40px;
     border-bottom: 3px solid #993399;
 }
+#inicio{
+    font-size: 60px;
+}
 h2{
     font-size: 35px;
     margin-bottom: 40px;
@@ -135,7 +137,7 @@ main{
 
 .main__text .main__text-main{
     display: flex;
-    margin-top: 80px;
+    margin-top: 20px;
 }
 main .main__img{
     width: 600px;
@@ -196,7 +198,15 @@ h1{
     
     table {
     border-collapse: collapse;
-    margin: auto;
+    }
+
+    #table{
+        width: 720px;
+        margin-right: 80px;
+    }
+
+    .table{
+        margin: auto;
     }
     
     th, td{
@@ -233,7 +243,7 @@ h1{
 /*Editando rodape*/
 
 .rodape{
-    width: 100%;
+    width: 97.4%;
     background-color: #410d41;
     color: #fff;
     padding: 20px;
@@ -280,7 +290,150 @@ h1{
 
 #fim{
     text-align: center;
+    margin-left: 30px;
     margin-top: 20px;
+    width: 90%;
 }
 
-        
+@media (min-width: 300px) and (max-width:880px){
+    .titulo{
+        height: 60px;
+        display: flex;
+    }
+    #logo{
+        height: 35px;
+        margin-left: 80px;
+    }
+    input{
+        visibility: hidden;
+     }
+     #menu_op{
+         display: block;
+     }
+     label{
+         display: block;
+         margin-left: 40px;
+     }
+     label img{
+         padding-left: 20px;
+         width: 35px;
+         float: right;
+         margin-right: 50px;
+     }
+     nav{
+         background-color: rgba(0,0,0,0.9);
+         width: 80%;
+         height: 220px;
+         border-radius: 10px;
+     }
+     #menu_op:checked ~ #menu{
+         margin-right: 0;
+         transition: all 0.5s;
+     }
+     #menu{
+         top: 85px;
+         position: absolute;
+         z-index: 99;
+         right: 0;
+         margin-right: -120%;
+         box-shadow: 0px 5px 3px #1c1c11;
+     }
+     #menu ul li{
+         display: flex;
+         flex-direction: column;
+         margin-top: 20px;
+         height: 30px;
+         text-align: center;
+     }
+     .explore{
+        display: block;
+    }
+     #menu ul .explore::after{
+        content: '';
+        height: 50px;
+        width: 0;
+        background: #993399;
+        opacity: 0.4;
+        border-radius: 20px;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        z-index: -111;
+        transition: all .5s;
+    }
+    #menu ul .explore:hover:after{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    /*Editando o meio*/
+    #inicio{
+        font-size: 50px;
+    }
+    .wrapper h2{
+        font-size: 25px;
+    }
+    .wrapper p{
+        text-align: justify;
+    }
+    .main__img, .tabela img, .none{
+        display: none;
+    }
+
+    main{
+        display: flex;
+        width: 100%;
+    }
+    .main__text{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    #table, .table{
+        width: 280px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #sem1, #sem4{
+        margin-left: 3.5%;
+    }
+
+    #table{
+        margin-top: 30px;
+        margin-left: 2%;
+    }
+
+    .table{
+        margin-left: 10%;
+    }
+
+    .tableFim{
+        margin-left: 10%;
+    }
+
+    /*Editando o rodape*/
+    .rodape{
+        width: 100%;
+        padding: 0;
+    }
+    .textRodape{
+        width: 100%;
+        margin-left: 0;
+        display: grid;
+        grid-template-areas: "logo logo logo"
+                              "h3 h3 h3"  
+                              "ul ul ul";
+        justify-content: space-around;
+    }
+
+    .logoRodape img{
+        margin-top: 20px;
+    }
+    .h3{
+        margin-bottom: 30px;
+    }
+    #fim{
+        margin-bottom: 20px;
+    }
+}       

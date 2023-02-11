@@ -22,12 +22,11 @@ header {
   position: fixed;
 }
 #logo {
-  height: 180px;
-  margin-top: 10px;
+  height: 80px;
+  margin-top: 15px;
   cursor: pointer;
-  margin-left: 30px;
+  margin-left: 120px;
   opacity: 0.9;
-  border-radius: 20px;
 }
 input {
   display: none;
@@ -42,7 +41,7 @@ label {
 nav {
   flex: 1;
   text-align: right;
-  margin-right: 40px;
+  margin-right: 100px;
 }
 ul li {
   display: flex;
@@ -114,15 +113,15 @@ button {
   cursor: pointer;
 }
 button:hover {
-  background: linear-gradient(75deg, #33bb85 10%, #25d1fe 90%);
+  background: linear-gradient(75deg, #993399, #25d1fe);
   transition: all 0.5s;
   color: #fff;
 }
 
 @media (min-width: 300px) and (max-width: 880px) {
   #logo {
-    height: 140px;
-    margin-left: 0;
+    height: 35px;
+    margin-left: 80px;
   }
   #text {
     margin-top: 50%;
@@ -146,6 +145,8 @@ button:hover {
   label img {
     padding-left: 20px;
     width: 55px;
+    float: right;
+    margin-right: 50px;
   }
   nav {
     background-color: rgba(0, 0, 0, 0.9);

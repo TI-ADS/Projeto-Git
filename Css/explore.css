@@ -34,7 +34,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: black;
+    background-color:  #020530;
     margin-top: 0;
     width: 100%;
     height: 80px;
@@ -42,12 +42,11 @@
     box-shadow: 0px 5px 10px #1c1c1c;
 }
 #logo{
-    height: 180px;
+    height: 50px;
     margin-top: 10px;
     cursor: pointer;
     margin-left: 30px;
     opacity: 0.9;
-    border-radius: 20px;
 }
 input, #menu_op{
     display: none ;
@@ -168,7 +167,7 @@ ul li a{
 /*Editando rodape*/
 
 .rodape{
-    width: 100%;
+    width: 97.4%;
     background-color: #410d41;
     color: #fff;
     padding: 20px;
@@ -215,13 +214,19 @@ ul li a{
 
 #fim{
     text-align: center;
+    margin-left: 30px;
     margin-top: 20px;
+    width: 90%;
 }
 
 @media (min-width: 300px) and (max-width:880px){
+    .titulo{
+        height: 60px;
+        display: flex;
+    }
     #logo{
-        height: 140px;
-        margin-left: 0;
+        height: 35px;
+        margin-left: 80px;
     }
     input{
         visibility: hidden;
@@ -234,9 +239,11 @@ ul li a{
          margin-left: 40px;
      }
      label img{
-         padding-left: 20px;
-         width: 40px;
-     }
+        padding-left: 20px;
+        width: 35px;
+        float: right;
+        margin-right: 50px;
+    }
      nav{
          background-color: rgba(0,0,0,0.9);
          width: 80%;
@@ -325,6 +332,7 @@ ul li a{
 
     /*Editando o rodape*/
     .rodape{
+        width: 100%;
         padding: 0;
     }
     .textRodape{

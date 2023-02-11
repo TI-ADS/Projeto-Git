@@ -5,24 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1.0">
     <link rel="stylesheet" href="./Css/pagina1.css">
+    <link rel="shortcut icon" href="./Imagens/ifpb.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <title>Pagina 1</title>
+    <title>Curso</title>
 </head>
 <body>
     <div id="container">
         <header class="cabeca">
             <div class="titulo">
-                <a href="index.html"><img id="logo" title="ADS" src="./Imagens/logoADS.png.png"></a>
+                <a href="index.html"><img id="logo" title="ADS" src="./Imagens/logoIF.png"></a>
                 <input type="checkbox" id="menu_op">
                 <label for="menu_op"><img src="./Imagens/MenuRoxo.png"></label>
                 <nav id="menu">
                     <ul>
                         <li><a class="li" href="index.html">HOME</a></li>
                         <li><a class="active" href="pagina1.html">CURSO</a></li>
-                        <li><a class="li" href="pagina2.html">INSTITUIÇÃO</a></li>
-                        <li><a class="explore" href="explore.html">EXPLORE</a></li>
+                        <li><a class="li" href="pagina2.html">CAMPUS</a></li>
+                        <li><a class="explore li" href="explore.html">EXPLORE</a></li>
                     </ul>
                 </nav>
             </div>
@@ -31,13 +32,13 @@
             <div class="wrapper">
                 <main>
                     <div class="main__text">
-                        <h2>Sobre o <span>Nosso Curso</span></h2>
+                        <h2 id="inicio">Sobre o <span>Nosso Curso</span></h2>
                         <p>O curso tem como formas de acesso o <span>SISU</span>(sistema informatizado do Ministério da Educação por meio do qual instituições públicas de ensino superior oferecem vagas a candidatos participantes do ENEM) o <span>PSCS</span>(Processo Seletivo Cursos Superiores 2022.2 para ingresso nas vagas remanescentes do SISU 2022/2ª edição do segundo semestre letivo de 2022) e o <span>PSE</span>(Processo Seletivo Especial para ingresso nos Cursos Superiores Presenciais do IFPB nas modalidades: (I) REINGRESSO: destinada a discentes de cursos superiores de graduação que perderam o vínculo com o IFPB e desejam retomar sua matrícula no curso; (II) REOPÇÃO DE CURSO: destinada a discentes vinculados aos cursos superiores de graduação do 
                            <span>IFPB</span> que desejam mudar de <span>curso</span> ; (III) TRANSFERÊNCIA INTERINSTITUCIONAL: destinada a discentes oriundos de cursos superiores de graduação de outras Instituições de Ensino Superior, que queiram dar prosseguimento aos seus estudos no IFPB; (IV) INGRESSO DE GRADUADOS: destinada a portadores de diplomas de cursos superiores de graduação, devidamente reconhecidos, que tenham interesse em realizar um curso superior de graduação no IFPB.)</p>
                         <div class="main__text-main">
                             <div>
                                 <p>
-                                    O tecnólogo em <span>Aálise e Desenvolvimento de Sistemas</span> analisa, projeta, documenta, especifica, testa, implanta e mantém sistemas <span>computacionais</span> de informação. Este profissional trabalha, também, com ferramentas computacionais, equipamentos de <span>informática</span> e metodologia de projetos na produção de sistemas. Raciocínio lógico, emprego de <span>linguagens de programação</span> e de metodologias de construção de projetos, preocupação com a qualidade, usabilidade, robustez, integridade e segurança de <span>programas</span> computacionais são fundamentais à atuação deste profissional.
+                                    O tecnólogo em <span>Análise e Desenvolvimento de Sistemas</span> analisa, projeta, documenta, especifica, testa, implanta e mantém sistemas <span>computacionais</span> de informação. Este profissional trabalha, também, com ferramentas computacionais, equipamentos de <span>informática</span> e metodologia de projetos na produção de sistemas. Raciocínio lógico, emprego de <span>linguagens de programação</span> e de metodologias de construção de projetos, preocupação com a qualidade, usabilidade, robustez, integridade e segurança de <span>programas</span> computacionais são fundamentais à atuação deste profissional.
                                 </p>
                             </div>
                         </div>
@@ -47,144 +48,86 @@
                     </div>
                 </main>
                 <h2><span>Disciplinas</span></h2>
-                <button>1 SEMESTRE</button>
-                <button>2 SEMESTRE</button>
-                <button>3 SEMESTRE</button>
-                <button>4 SEMESTRE</button>
-                <button>5 SEMESTRE</button>
-                <button>6 SEMESTRE</button>
+                <button id="sem1">1 SEMESTRE</button>
+                <button id="sem2">2 SEMESTRE</button>
+                <button id="sem3">3 SEMESTRE</button>
+                <button id="sem4">4 SEMESTRE</button>
+                <button id="sem5">5 SEMESTRE</button>
+                <button id="sem6">6 SEMESTRE</button>
               <section class="tabela"> 
                 <!-- TABELA DISCIPLINAS -->       
-        <table>
-          <tr>
-            <th>Disciplinas</th>
-            <th>CH</th>
-            <th>Docente</th>
-            <th>Titulação</th>
-            <th>TSI</th>
-          </tr>
-         
-          <tr>
-            <td><a href="#">Algoritimos e Lógica de Programação</a></td>
-            <td>117</td>
-            <td><a href="#">Fabio Gomes de Andrade</a></td>
-            <td>Doutorado</td>
-            <td>14 anos</td>
-            <td>DE</td>
-          </tr>
-         
-          <tr>
-            <td><a href="#">Cálculo Diferencial e Integral</a></td>
-           <td>100</td>
-            <td><a href="#">Naiara Pereira Tavares</a></td>
-            <td>-</td>
-            <td>1 ano</td>
-            <td>TI</td>
-          </tr>
-           <tr>
-            <td><a href="#">Inglês Instrumental</a></td>
-           <td>33</td>
-            <td><a href="#">Daniela Miguel de Souza</a></td>
-            <td>Mestrado</td>
-            <td>3 anos</td>
-            <td>DE</td>
-          </tr>
-          
-          <tr>
-            <td><a href="#">Linguagens de Marcação</a></td>
-           <td>67</td>
-            <td><a href="#">Diogo Dantas Moreira</a></td>
-            <td>Mestrado</td>
-            <td>9 anos</td>
-            <td>DE</td>
-          </tr>
-          <tr>
-            <td><a href="#">Português Instrumental I</a></td>
-            <td>33</td>
-            <td><a href="#">Francisco Igor Arraes Alves Rocha</a></td>
-            <td>Mestrado</td>
-            <td>8 anos</td>
-            <td>DE</td>
-          </tr>
-          <tr>
-            <td><a href="#">Fundamentos da Computação</a></td>
-            <td>67</td>
-            <td><a href="#">Andre Lira Rolim</a></td>
-            <td>Mestrado</td>
-            <td>14 anos</td>
-            <td>DE</td>
-          </tr>
+        <table id="table">
         </table>
         <div class="main__img">
-            <img src="Imagens/Programmer-PNG-Image.png" width="100%">
+          <img src="Imagens/Programmer-PNG-Image.png" width="100%">
         </div>
         <!-- TABELA INFORMAÇÕES BÁSICAS -->
               </section>
               <section>
               <h2>Informações <span>Básicas</span></h2>
-              <table>
+              <table class="table">
                 <tr>
                     <tr>
                         <td><a href="#">Código do Curso (e-Mec):</a></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td class="none"></td>
+                        <td class="none"></td>
+                        <td class="none"></td>
                         <td>5</td>
                         <td></td>
                       </tr>
               </tr>
               <tr>
                 <td><a href="#">Conceito do Curso (CC):</a></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td class="none"></td>
+                <td class="none"></td>
+                <td class="none"></td>
                 <td>5</td>
                 <td></td>
               </tr>
              
               <tr>
                 <td><a href="#">Conceito Preliminar do Curso (CPC):</a> </td>
-               <td></td>
-                <td></td>
-                <td></td>
+               <td class="none"></td>
+                <td class="none"></td>
+                <td class="none"></td>
                 <td>4</td>
                 <td></td>
               </tr>
                <tr>
                 <td><a href="#">Enade</a></td>
-               <td></td>
-                <td></td>
-                <td></td>
+               <td class="none"></td>
+                <td class="none"></td>
+                <td class="none"></td>
                 <td>5</td>
                 <td></td>
               </tr>
               <td><a href=""> Índice Geral de Cursos (IGC)</a></td>
-               <td></td>
-                <td></td>
-                <td></td>
+               <td class="none"></td>
+                <td class="none"></td>
+                <td class="none"></td>
                 <td>3</td>
                 <td></td>
               <tr>
                 <td><a href="#">Conceito Institucional (CI):</a></td>
-               <td></td>
-                <td></td>
-                <td></td>
+               <td class="none"></td>
+                <td class="none"></td>
+                <td class="none"></td>
                 <td>4</td>
                 <td></td>
               </tr>
               <tr>
                 <td><a href="#">Turno</a></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td class="none"></td>
+                <td class="none"></td>
+                <td class="none"></td>
                 <td>Integral</td>
                 <td></td>
               </tr>
               <tr>
                 <td><a href="">Modalidade</a></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td class="none"></td>
+                <td class="none"></td>
+                <td class="none"></td>
                 <td>Presencial</td>
                 <td></td>
               </tr>
@@ -194,55 +137,55 @@
             <h2>Estrutura <span>Curricular</span></h2>
             <section class="tabela">
                 <img src="Imagens/Developed.jpg" alt="">
-            <table>
+            <table class="tableFim">
               <tr>
                   <tr>
                       <td><a href="#">Carga Horária Mínima de Integralização:</a></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
+                      <td class="none"></td>
+                      <td class="none"></td>
+                      <td class="none"></td>
                       <td>2550</td>
-                      <td></td>
+                      <td class="none"></td>
                     </tr>
             </tr>
             <tr>
               <td><a href="#">Trabalho de Conclusão de Curso:</a></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td class="none"></td>
+              <td class="none"></td>
+              <td class="none"></td>
               <td>66 h</td>
-              <td></td>
+              <td class="none"></td>
             </tr>
            
             <tr>
               <td><a href="#">Período Mínimo de Integralização:</a></td>
-             <td></td>
-              <td></td>
-              <td></td>
+             <td class="none"></td>
+              <td class="none"></td>
+              <td class="none"></td>
               <td>6</td>
-              <td></td>
+              <td class="none"></td>
             </tr>
              <tr>
               <td><a href="#">Número Total de Vagas:</a></td>
-             <td></td>
-              <td></td>
-              <td></td>
+             <td class="none"></td>
+              <td class="none"></td>
+              <td class="none"></td>
               <td>60</td>
-              <td></td>
+              <td class="none"></td>
             </tr>
             <td><a href="#">1º Semestre:</a></td>
-             <td></td>
-              <td></td>
-              <td></td>
+             <td class="none"></td>
+              <td class="none"></td>
+              <td class="none"></td>
               <td>30 vagas</td>
-              <td></td>
+              <td class="none"></td>
             <tr>
               <td><a href="#">2º Semestre:</a></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td class="none"></td>
+              <td class="none"></td>
+              <td class="none"></td>
               <td>30 vagas</td>
-              <td></td>
+              <td class="none"></td>
             </tr>
           </table>
         </section>
@@ -269,10 +212,10 @@
                         <p>CEP: 58.900-000 </p>
                 </div>
             </div>
-            <p id="fim">2023 ©ADS/IFPB. Política de Privacidade.</p>
+            <p id="fim">2023 ©ADS/IFPB.</p>
         </footer>
     </div>
-    <script src="./JavaScript/cafeina.js"></script>
+    <script src="./JavaScript/tabela.js"></script>
 </body>
 </body>
 </html>
